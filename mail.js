@@ -10,10 +10,10 @@ var transporter = nodemailer.createTransport({
 });
 
 var mailOptions = {
-    from: 'GreenTree<senderaddress>', // sender address
-    to: 'Dear <receiveraddress>', // list of receivers
-    subject: 'Subjects', // Subject line
-    html: '<b>Hello world</b>' // html body
+    from: 'GreenTree<senderaddress>',
+    to: 'Dear <receiveraddress>', 
+    subject: 'Subjects', 
+    html: '<b>Hello world</b>' 
 };
 
 transporter.sendMail(mailOptions, function(error, info){
